@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://1rgms4eprutu"]
+
+[ext_resource type="Script" uid="uid://lxt28l4ebt3l" path="res://Escenas/button.gd" id="1_xwv8r"]
+
+[node name="EscenaPueva" type="Node"]
+
+[node name="Button" type="Button" parent="."]
+offset_left = 264.0
+offset_top = 232.0
+offset_right = 304.0
+offset_bottom = 272.0
+theme_override_colors/icon_hover_color = Color(0.772549, 0, 0, 1)
+text = "Enemigo"
+script = ExtResource("1_xwv8r")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
